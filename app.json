@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "ImuniKids",
+    "slug": "imunikids",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "imunikids",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#87CEEB"
+    },
+    "ios": {
+      "supportsTablet": false
+    },
+    "androidStatusBar": {
+      "hidden": true,
+      "translucent": true
+    },
+    "android": {
+      "package": "com.zeetasi.imunikids",
+      "enableProguardInRelease": true,
+      "enableShrinkResources": true,
+      "abiFilters": ["armeabi-v7a", "arm64-v8a"]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-notifications",
+        {
+          "sounds": ["./assets/audio/alarm.mp3"],
+          "icon": "./assets/images/icon.png",
+          "color": "#297191",
+          "defaultChannel": "imunisasi-reminder"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
