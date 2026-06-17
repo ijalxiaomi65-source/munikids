@@ -22,24 +22,24 @@
       "package": "com.zeetasi.imunikids",
       "enableProguardInRelease": true,
       "enableShrinkResources": true,
-      "abiFilters": ["armeabi-v7a", "arm64-v8a"]
+      "abiFilters": [
+        "armeabi-v7a",
+        "arm64-v8a"
+      ]
     },
     "web": {
       "favicon": "./assets/images/icon.png"
     },
     "plugins": [
-      [
-        "expo-router",
-        {
-          "origin": "https://replit.com/"
-        }
-      ],
+      "expo-router",
       "expo-font",
       "expo-web-browser",
       [
         "expo-notifications",
         {
-          "sounds": ["./assets/audio/alarm.mp3"],
+          "sounds": [
+            "./assets/audio/alarm.mp3"
+          ],
           "icon": "./assets/images/icon.png",
           "color": "#297191",
           "defaultChannel": "imunisasi-reminder"
@@ -47,8 +47,12 @@
       ]
     ],
     "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "85eceb0e-3b5b-4a27-a3f0-568db0ded3fe"
+      }
     }
   }
 }
